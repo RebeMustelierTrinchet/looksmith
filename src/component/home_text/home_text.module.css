@@ -1,0 +1,72 @@
+.homePage {
+  font-family: 'Poppins', sans-serif;
+  color: #111;
+  line-height: 1.6;
+  background-image: url('../../images/img.png'); /* imagen de fondo */
+  background-size: cover;
+  background-attachment: fixed; /* ¡fondo estático! */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4); /* para que se vea texto sobre la imagen */
+}
+
+.tittle_1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.5rem;
+}
+
+/* Why Choose Us */
+.whyChoose {
+  padding: 4rem 2rem;
+  text-align: center;
+    background: rgba(123, 122, 122, 0.4);
+}
+
+.tittle_2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2563eb;
+}
+
+.whyChoose p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+
+.tittle_2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.btn{
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background-color: #1e40af;
+}
+
+/* Features ya lo hicimos en Features.jsx + features.module.css */

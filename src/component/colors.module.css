@@ -1,0 +1,21 @@
+/* colors.module.css */
+
+/* Fondo */
+:root {
+  --color-background: #313131e1; /* fondo principal negro */
+  --color-secondary-background: #111111; /* para secciones secundarias */
+  
+  /* Texto */
+  --color-text: #ffffff; /* todo el texto blanco */
+  --color-subtext: #dddddd; /* para textos menos importantes */
+  
+  /* Acentos / botones / iconos */
+  --color-accent-blue: #1970C2; 
+  --color-accent-gold: #FFD700; /* dorado para detalles y estrellas */
+  --color-accent-gray: #444444; /* gris para separadores, bordes */
+  
+  /* Estados */
+  
+  /* Bordes y sombras */
+  --color-border: #222222;
+}

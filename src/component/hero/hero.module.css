@@ -1,0 +1,136 @@
+.hero {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+  background-color: rgba(46, 46, 46, 0.449);
+  
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Text */
+.textBox {
+  flex: 1 1 500px;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #fffafa;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 1rem;
+  
+}
+.cta {
+  --c1: var(--color-accent-blue);
+  --c2: color-mix(in srgb, var(--color-accent-blue) 70%, white);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(90deg, var(--c1), var(--c2)) !important;
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  -webkit-text-fill-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  transition: background-position 0.6s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.cta:hover {
+  background-position: 100% 0% !important; /* desplaza gradiente */
+  transform: translateY(-2px); /* efecto flotante */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.cta:active {
+  transform: scale(0.96); /* efecto táctil en móviles */
+}
+
+.icon {
+  border: 2px solid white;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: inherit !important;
+  margin-right: 10px;
+}
+
+.secondary {
+  border: 2px solid #0077ff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0077ff;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  background: #0077ff;
+  color: white;
+}
+
+/* Image */
+.imageBox {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+}

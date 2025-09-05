@@ -1,0 +1,165 @@
+@import "./../../component/colors.module.css";
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  color: #000000;
+  border-bottom: 2px solid var(--color-background);
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Botón candado */
+.lockButton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+
+  position: fixed;
+}
+
+.lockButton img {
+  width: 42px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.lockButton:hover img {
+  transform: scale(1.1);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 200px;
+  height: 100vh;
+  background: #222;
+  padding-top: 4rem;
+  transition: 0.6s ease;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 1.5rem 0;
+}
+
+.sidebar a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background: var( --color-accent-blue); 
+  color: #f5f2f2 !important;
+  border-radius: 8px;
+  font-size: 1.4rem;
+}
+
+/* Sidebar abierto */
+.sidebar.open {
+  left: 0;
+}
+
+/* Frase central */
+.centerText {
+  flex: 1;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var( --color-accent-blue);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Logo derecha */
+.logo a {
+  color: #f5c518;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.4rem;
+  z-index: 10;
+}
+
+.active {
+  color:var( --color-accent-blue)!important;
+}
+
+
+/* ===================== */
+/* 📱 VISTA MÓVIL */
+/* ===================== */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction:row !important; /* Se apilan los elementos */
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding: 0.5rem 1rem;
+    position: relative;
+  }
+
+  /* Frase arriba del todo */
+  .centerText {
+    order: -1; /* se pone primero */
+    /* margin-bottom: 0.8rem; */
+    font-size: 1.2rem;
+    display:block;
+    text-align: center;
+    width: 1000px!important;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+
+
+  }
+
+  /* Candado y logo juntos en la parte de abajo */
+  .lockButton {
+    order: 1;
+    margin: 20px;
+  }
+
+  .logo {
+    order: 2;
+    margin-top: 0.5rem;
+    width: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* .navbar > * {
+    width: 100%; /* Cada bloque ocupa todo el ancho 
+    display: flex;
+    justify-content: center;
+  } */
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+}
