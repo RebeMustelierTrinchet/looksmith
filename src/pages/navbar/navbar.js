@@ -83,6 +83,11 @@ export default function Navbar() {
               Contact
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/faq" className={({ isActive }) => isActive ? styles.active : ""}>
+              F.A.Q
+            </NavLink>
+          </li>
         </ul>
       </div>
 

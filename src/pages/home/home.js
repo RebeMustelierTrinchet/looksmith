@@ -10,6 +10,7 @@ import Coverage from "../../component/coverage/coverege";
 import Benefits from "../../component/Benefits/Benefits";
 import QuickTipsCarousel from "../../component/tips/tips";
 import CallButton from "../../component/call/call";
+import Politics from "../../component/politics/politics";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         
         <Action/>
         <AboutUs/>
+        <Politics/>
         <QuickTipsCarousel/>
         
       </div>

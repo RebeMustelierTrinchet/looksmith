@@ -8,13 +8,10 @@ export default function AboutUs() {
       <div className={styles.text_container}>
         <h2 className={styles.title}>About Us</h2>
         <p className={styles.subtitle}>
-          We are a locksmith service dedicated to solving your problems quickly 
-          and efficiently. Whether you are locked out, need a duplicate, or 
-          require emergency assistance, we are here 24/7 to give you peace of mind.
+          We, at Vibe Locksmith, provide top-level locksmith services that match your specific needs. Whether you need an emergency lockout, key replacement, or other security solutions, you can rest assured that our experienced technicians will be there to help.
         </p>
         <p className={styles.subtitle}>
-          Our team combines experience, reliability, and modern tools to ensure 
-          your keys and locks are always in safe hands.
+          Trust, credibility and customer satisfaction is what our method is surrounded by. Satisfaction Guaranteed.
         </p>
       </div>
       <div className={styles.image_container}>
