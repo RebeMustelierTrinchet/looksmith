@@ -133,4 +133,63 @@
   .actions {
     justify-content: center;
   }
+  .hero{
+    min-height: 50vh;
+  }
+  .textBox{
+    max-height: 38vh;
+  }
+}
+
+
+
+/* ====================== */
+/* 📱 Mobile (≤768px) */
+/* ====================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .actions {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .cta {
+    width: 100%;   /* 🔹 Botones ocupan todo el ancho en móvil */
+    max-width: 280px;
+  }
+
+  .image {
+    max-width: 95%;
+  }
+}
+
+/* ====================== */
+/* 📱 Tablet (769px–1024px) */
+/* ====================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .image {
+    max-width: 90%;
+  }
 }

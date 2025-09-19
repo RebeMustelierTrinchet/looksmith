@@ -64,8 +64,8 @@ export default function Action({
         </p>
       </div>
       </div>
-      <div className={styles.img}>
-        <img src={img}/>
+      <div className={styles.img_cnt}>
+        <img className={styles.img} src={img}/>
       </div>
     </section>
   );

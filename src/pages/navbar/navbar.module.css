@@ -1,4 +1,5 @@
 @import "./../../component/colors.module.css";
+
 .navbar {
   display: flex;
   align-items: center;
@@ -10,16 +11,18 @@
   position: relative;
   z-index: 1000;
   font-family: "Poppins", sans-serif;
+  flex-wrap: wrap;
 }
 
-/* Botón candado */
+/* Botón candado (fijo en pantalla) */
 .lockButton {
   background: transparent;
   border: none;
   cursor: pointer;
   z-index: 1100;
-
-  position: fixed;
+  position: fixed; 
+  top: 13px;  /* 🔹 Ajusta según quieras */
+  left: 20px; /* 🔹 En móvil lo mandamos abajo */
 }
 
 .lockButton img {
@@ -37,7 +40,8 @@
   position: fixed;
   top: 0;
   left: -260px;
-  width: 200px;
+  width: 220px;
+  max-width: 80%;
   height: 100vh;
   background: #222;
   padding-top: 4rem;
@@ -64,13 +68,12 @@
 }
 
 .sidebar a:hover {
-  background: var( --color-accent-blue); 
+  background: var(--color-accent-blue); 
   color: #f5f2f2 !important;
   border-radius: 8px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
-/* Sidebar abierto */
 .sidebar.open {
   left: 0;
 }
@@ -81,20 +84,23 @@
   text-align: center;
   font-size: 1.3rem;
   font-weight: bold;
-  color: var( --color-accent-blue);
+  color: var(--color-accent-blue);
   animation: fadeIn 0.5s ease-in-out;
+  padding: 0 1rem;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }
 
-/* Logo derecha */
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo a {
   color: #f5c518;
   font-weight: bold;
@@ -104,62 +110,52 @@
 }
 
 .active {
-  color:var( --color-accent-blue)!important;
+  color: var(--color-accent-blue)!important;
 }
-
 
 /* ===================== */
 /* 📱 VISTA MÓVIL */
 /* ===================== */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction:row !important; /* Se apilan los elementos */
-    flex-wrap: wrap;
-    /* align-items: center; */
     padding: 0.5rem 1rem;
-    position: relative;
-  }
-
-  /* Frase arriba del todo */
-  .centerText {
-    order: -1; /* se pone primero */
-    /* margin-bottom: 0.8rem; */
-    font-size: 1.2rem;
-    display:block;
+    flex-direction: column;
     text-align: center;
-    width: 1000px!important;
-    height: 65px;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-
-
   }
 
-  /* Candado y logo juntos en la parte de abajo */
+  .centerText {
+    order: -1;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+
+  /* 🔹 El candado fijo pasa a la esquina inferior izquierda */
   .lockButton {
-    order: 1;
-    margin: 20px;
+    top: 23px;
+    /* bottom: 20px;
+    left: 20px; */
   }
 
   .logo {
     order: 2;
-    margin-top: 0.5rem;
-    width: 300px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: center;
+    margin-top: 0.3rem;
   }
-
-  /* .navbar > * {
-    width: 100%; /* Cada bloque ocupa todo el ancho 
-    display: flex;
-    justify-content: center;
-  } */
 
   .logo a {
     font-size: 1.2rem;
+  }
+}
+
+/* ===================== */
+/* 📱 VISTA TABLET */
+/* ===================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .centerText {
+    font-size: 1.2rem;
+  }
+
+  .logo a {
+    font-size: 1.3rem;
   }
 }

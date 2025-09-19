@@ -1,12 +1,13 @@
 .about_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Dos columnas en desktop */
   gap: 40px;
   align-items: center;
   padding: 60px 10%;
   background-color: rgba(46, 46, 46, 0.449);
 }
 
+/* Texto */
 .text_container {
   font-family: Arial, sans-serif;
 }
@@ -24,6 +25,7 @@
   margin-bottom: 15px;
 }
 
+/* Imagen */
 .image_container img {
   width: 100%;
   max-width: 450px;
@@ -31,7 +33,7 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-
+/* Estilos generales de títulos y subtítulos */
 .title {
   font-size: 2.8rem;
   font-weight: 800;
@@ -39,10 +41,62 @@
   margin-bottom: 1rem;
 }
 
-
 .subtitle {
   font-size: 1.2rem;
   color: #fffafa !important;
   margin-bottom: 1.5rem;
   line-height: 1.6;
+}
+
+/* ========================= */
+/* 📱 VISTA MÓVIL (≤768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .about_container {
+    grid-template-columns: 1fr; /* Una columna en móvil */
+    padding: 40px 5%;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .text_container h2 {
+    font-size: 2rem;
+  }
+
+  .text_container p {
+    font-size: 1rem;
+  }
+
+  .image_container img {
+    max-width: 80%; /* Ajusta tamaño de imagen en móvil */
+    margin: 0 auto;
+     
+  }
+
+  .image_container{
+     order: -1;
+  }
+}
+
+/* ========================= */
+/* 📱 VISTA TABLET (769px – 1024px) */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr 1fr; /* Mantiene dos columnas */
+    gap: 30px;
+    padding: 50px 8%;
+  }
+
+  .text_container h2 {
+    font-size: 2.4rem;
+  }
+
+  .text_container p {
+    font-size: 1.1rem;
+  }
+
+  .image_container img {
+    max-width: 90%;
+  }
 }
