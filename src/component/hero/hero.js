@@ -2,6 +2,8 @@ import styles from "./hero.module.css";
 import image from "./../../images/img.png";
 import { BsTelephoneXFill } from "react-icons/bs";
 import { FaKey } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
+import { TbMessageCircle } from "react-icons/tb";
 
 export default function Hero() {
   return (
@@ -14,20 +16,38 @@ export default function Hero() {
         {/* Text content */}
         <div className={styles.textBox}>
           <h1 className={styles.title}>
-            Your Security, Our Keys 🔑
+            Securing today...
           </h1>
           <p className={styles.subtitle}>
-            Fast, reliable locksmith services.  
-            We duplicate keys, open locks, and provide solutions for your peace of mind.
+            protecting tomorrow
           </p>
 
           {/* Call-to-action buttons */}
           <div className={styles.actions}>
-            <a href="#services" className={styles.cta}><FaKey className={styles.icon}/>
-              View Services
+            {/* Phone Call */}
+            <a href="tel:9367773999" className={styles.cta}>
+              <BsTelephoneXFill className={styles.icon}/>
+              Call Us
             </a>
-            <a href="#contact" className={styles.cta}>< BsTelephoneXFill  className={styles.icon}/>
-              Contact Us
+
+            {/* WhatsApp Chat */}
+            <a 
+              href="https://wa.me/9367773999?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className={styles.cta}
+            >
+              <FaWhatsapp className={styles.icon}/>
+              WhatsApp
+            </a>
+
+            {/* SMS Message */}
+            <a 
+              href="sms:9367773999?body=Hi%2C%20I%20am%20interested%20in%20your%20locksmith%20services" 
+              className={styles.cta}
+            >
+              <TbMessageCircle className={styles.icon}/>
+              SMS Message
             </a>
           </div>
         </div>

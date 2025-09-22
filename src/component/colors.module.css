@@ -2,7 +2,8 @@
 
 /* Fondo */
 :root {
-  --color-background: #999a9ae1; /* fondo principal negro */
+  --color-background: #737373; /* fondo principal negro */
+  --color-grey-blue:rgba(164, 231, 237, 0.299);
   --color-secondary-background: #111111; /* para secciones secundarias */
   
   /* Texto */
@@ -10,7 +11,8 @@
   --color-subtext: #dddddd; /* para textos menos importantes */
   
   /* Acentos / botones / iconos */
-  --color-accent-blue: #1970C2; 
+  --color-accent-blue:#305cde;  
+    --color-logo-blue: #1970C2;
   --color-accent-gold: #FFD700; /* dorado para detalles y estrellas */
   --color-accent-gray: #444444; /* gris para separadores, bordes */
   

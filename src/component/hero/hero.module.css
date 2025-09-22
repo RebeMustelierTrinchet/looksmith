@@ -1,3 +1,5 @@
+@import './../colors.module.css';
+
 .hero {
   width: 100%;
   min-height: 90vh;
@@ -5,7 +7,7 @@
   align-items: center;
   justify-content: center;
   /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
-  background-color: rgba(46, 46, 46, 0.449);
+  background-color: var(--color-grey-blue);
   
   padding: 2rem 1rem;
 }
@@ -33,7 +35,7 @@
 
 .subtitle {
   font-size: 1.2rem;
-  color: #fffafa;
+  color: #303030;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -41,6 +43,7 @@
 /* Buttons */
 .actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   
 }

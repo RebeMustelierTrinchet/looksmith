@@ -1,8 +1,31 @@
-import React from "react";
+
+import React, { useEffect, useRef } from "react";
 import styles from "./Benefits.module.css";
 import { FaUserShield, FaCheckCircle, FaTools } from "react-icons/fa";
 
 export default function Benefits() {
+const cardsRef = useRef([]);
+
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add(styles.show); // activa animación
+            observer.unobserve(entry.target); // evita repetir animación
+          }
+        });
+      },
+      { threshold: 0.2 } // se activa cuando el 20% del elemento entra en pantalla
+    );
+
+    cardsRef.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const benefits = [
     {
       icon: <FaTools />,
@@ -29,7 +52,11 @@ export default function Benefits() {
         <h2 className={styles.sectionTitle}>Trust & Reliability</h2>
         <div className={styles.benefitsGrid}>
           {benefits.map((benefit, index) => (
-            <div key={index} className={styles.benefitCard}>
+               <div
+              key={index}
+              className={`${styles.benefitCard} ${styles.hidden}`} // inicia oculto
+              ref={(el) => (cardsRef.current[index] = el)}
+            >
               <div className={styles.icon}>{benefit.icon}</div>
               <h3 className={styles.title}>{benefit.title}</h3>
               <p className={styles.description}>{benefit.description}</p>

@@ -7,24 +7,13 @@ const Coverage = () => {
       <div className={styles.container}>
         <h2 className={styles.title}>Service Coverage </h2>
         <p className={styles.subtitle}>
-          We are proud to serve the entire{" "}
-          <span className={styles.highlight}>Houston, Texas</span> area,
+          We are proud to serve the {" "}
+          <span className={styles.highlight}>Greater Houston, Texas Area</span> area,
           including:
         </p>
 
         {/* List of neighborhoods/areas */}
-        <div className={styles.grid}>
-          <span className={styles.zone}>Downtown Houston</span>
-          <span className={styles.zone}>Midtown</span>
-          <span className={styles.zone}>Montrose</span>
-          <span className={styles.zone}>Heights</span>
-          <span className={styles.zone}>Westchase</span>
-          <span className={styles.zone}>Galleria / Uptown</span>
-          <span className={styles.zone}>Pasadena</span>
-          <span className={styles.zone}>Katy</span>
-          <span className={styles.zone}>Sugar Land</span>
-          <span className={styles.zone}>The Woodlands</span>
-        </div>
+      
 
         {/* Embedded Map */}
         <div className={styles.map}>

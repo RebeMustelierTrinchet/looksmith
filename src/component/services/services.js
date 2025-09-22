@@ -7,15 +7,9 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import { FaCarSide, FaKey, FaHome, FaLock, FaFingerprint, FaBuilding, FaLaptopCode, FaSyncAlt } from "react-icons/fa";
+import { MdMiscellaneousServices } from "react-icons/md";
 
-import {
-  FaCarSide,
-  FaKey,
-  FaHome,
-  FaLock,
-  FaBuilding,
-  FaFingerprint
-} from "react-icons/fa";
 
 export default function ServicesCarousel() {
   const services = [
@@ -72,7 +66,25 @@ export default function ServicesCarousel() {
       title: "Keyless Entry Solutions",
       description:
         "From homes to offices, keyless systems give you convenience + safety in one. Welcome to the future of locks."
-    }
+    },
+    {
+    icon: <MdMiscellaneousServices />,
+    title: "Dealer Level Diagnosis",
+    description:
+      "Advanced diagnostic tools just like the dealership—pinpointing issues quickly and accurately."
+  },
+  {
+    icon: <FaLaptopCode />,
+    title: "Dealer Level Programming",
+    description:
+      "From keys to electronic modules, we handle dealer-level programming without the dealership price."
+  },
+  {
+    icon: <FaSyncAlt />,
+    title: "Dealer Level Software Update",
+    description:
+      "Keep your vehicle running at its best with the latest dealer-approved software updates."
+  }
   ];
 
   return (

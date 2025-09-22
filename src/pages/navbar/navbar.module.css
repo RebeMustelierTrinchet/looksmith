@@ -17,6 +17,10 @@
 /* Botón candado (fijo en pantalla) */
 .lockButton {
   background: transparent;
+  display: flex;
+  /* border-radius: 50%; */
+  align-items: center;
+  justify-content: center;
   border: none;
   cursor: pointer;
   z-index: 1100;

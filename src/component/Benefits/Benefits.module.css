@@ -1,9 +1,9 @@
 .main_container_Section{
-  background-image: url('./../../images/key_background.png');
+    background-color:var(--color-grey-blue);
 }
 .benefitsSection {
   padding: 60px 20px;
-  background-color: #8dd5f670;
+  /* background-color: #8dd5f670; */
   text-align: center;
   
 }
@@ -60,4 +60,26 @@
   font-size: 0.95rem;
   color: #555;
   line-height: 1.4;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Estado visible con animación */
+.show {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Keyframes de animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

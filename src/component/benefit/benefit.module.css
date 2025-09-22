@@ -2,7 +2,7 @@
   padding: 4rem 2rem;
   /* background: #f9fafb;
    */
-   background-color:  #8dd5f670;;
+   /* background-color:  #8dd5f670;; */
   /* background-color: #9ac9ff; */
   text-align: center;
 
@@ -10,7 +10,7 @@
 }
 
 .main_container_Section{
-  background-image: url('./../../images/key_background.png');
+   background-color:var(--color-grey-blue);
 }
 
 
@@ -69,4 +69,27 @@
 .description {
   font-size: 0.95rem;
   color: #4b5563;
+}
+
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* Estado visible con animación */
+.show {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Keyframes de animación */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

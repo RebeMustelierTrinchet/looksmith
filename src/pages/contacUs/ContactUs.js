@@ -14,8 +14,7 @@ export default function ContacUs() {
         <Hero/>
         <ContactForm/>
         <ContactInfo/>
-        <Coverage/>
-        <Action/>
+       
         
       </div>
   );

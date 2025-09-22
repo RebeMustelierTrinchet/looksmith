@@ -18,9 +18,10 @@ export default function Home() {
       <div className={styles.container}>
         <CallButton/>
         <Hero/>
+        <Services/>
         <Features/>
         <Benefits/>
-        <Services/>
+        
         <Text/>
         
         <Testimonials/>
