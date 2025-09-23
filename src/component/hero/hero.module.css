@@ -154,6 +154,7 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    background-image: url('./../../images/img.png');
   }
 
   .title {
@@ -176,7 +177,7 @@
   }
 
   .image {
-    max-width: 95%;
+    display: none;
   }
 }
 
