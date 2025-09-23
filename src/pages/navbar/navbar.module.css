@@ -100,17 +100,13 @@
 
 /* Logo */
 .logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   height:90px;
+   padding: 0 !important;
+ 
 }
 
-.logo a {
-  color: #f5c518;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.4rem;
-  z-index: 10;
+.img_logo{
+  height:90px;
 }
 
 .active {
@@ -136,7 +132,7 @@
 
   /* 🔹 El candado fijo pasa a la esquina inferior izquierda */
   .lockButton {
-    top: 23px;
+    top: 40px;
     /* bottom: 20px;
     left: 20px; */
   }

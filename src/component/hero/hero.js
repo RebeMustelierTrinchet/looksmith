@@ -18,8 +18,8 @@ export default function Hero() {
           <h1 className={styles.title}>
             Securing today...
           </h1>
-          <p className={styles.subtitle}>
-            protecting tomorrow
+          <p className={styles.title}>
+            protecting tomorrow.
           </p>
 
           {/* Call-to-action buttons */}
