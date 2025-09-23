@@ -22,7 +22,7 @@ export default function ContactForm() {
     setStatus("Sending...");
 
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/messages`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL || process.env.REACT_APP_API_URL_VERCEL}/messages`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
