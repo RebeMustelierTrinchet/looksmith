@@ -123,6 +123,7 @@
   .container {
     flex-direction: column;
     text-align: center;
+
   }
 
   .title {
@@ -154,8 +155,19 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-image: url('./../../images/img.png');
+    background-color: #d0f8ffa4;
+     height: 50vh !important;
+
   }
+  .hero{
+     
+      background-image: url('./../../images/img.png');
+
+      background-image: url('./../../images/img.png');
+      background-size: cover;       /* que ocupe todo */
+      background-position: center;  /* centrada */
+      background-repeat: no-repeat;
+    }
 
   .title {
     font-size: 2rem;

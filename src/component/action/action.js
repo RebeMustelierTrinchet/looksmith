@@ -53,32 +53,32 @@ export default function Action({
         <p className={styles.phrase}>{currentPhrase}</p>
       
 
-      <div className={styles.actions}>
-        <a
-          className={styles.phoneButton}
-          href={telHref}
-          aria-label={`Call now ${phone}`}
-        >
-           <BsTelephoneXFill className={styles.icon}/>Call now
-        </a>
-        <a 
-              href="https://wa.me/9367773999?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className={styles.phoneButton}
+        <div className={styles.actions}>
+          <a
+            className={styles.phoneButton}
+            href={telHref}
+            aria-label={`Call now ${phone}`}
+          >
+            <BsTelephoneXFill className={styles.icon}/>Call now
+          </a>
+          <a 
+            href="https://wa.me/9367773999?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className={styles.phoneButton}
             >
-              <FaWhatsapp className={styles.icon}/>
-              WhatsApp
-            </a>
+            <FaWhatsapp className={styles.icon}/>
+            WhatsApp
+          </a>
 
             {/* SMS Message */}
-            <a 
-              href="sms:9367773999?body=Hi%2C%20I%20am%20interested%20in%20your%20locksmith%20services" 
-              className={styles.phoneButton}
-            >
-              <TbMessageCircle className={styles.icon}/>
-              SMS Message
-            </a>       
+          <a 
+            href="sms:9367773999?body=Hi%2C%20I%20am%20interested%20in%20your%20locksmith%20services" 
+            className={styles.phoneButton}
+          >
+            <TbMessageCircle className={styles.icon}/>
+            SMS Message
+          </a>       
       </div>
        <p className={styles.smallText}>
           Click to call — no data needed. <span className={styles.phoneNumber}>{phone}</span>
