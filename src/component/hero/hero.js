@@ -15,17 +15,15 @@ export default function Hero() {
         
         {/* Text content */}
         <div className={styles.textBox}>
-          <h1 className={styles.title}>
-            Securing today...
-          </h1>
-          <p className={styles.title}>
-            protecting tomorrow.
-          </p>
+          <h1 className={styles.title}>Securing today...</h1>
+          <h2 className={styles.subtitle}>Protecting tomorrow.</h2>
+
 
           {/* Call-to-action buttons */}
           <div className={styles.actions}>
             {/* Phone Call */}
-            <a href="tel:9367773999" className={styles.cta}>
+            <a href="tel:9367773999" className={styles.cta}
+             aria-label="Call Vibe Locksmith at 936-777-3999">
               <BsTelephoneXFill className={styles.icon}/>
               Call Us
             </a>

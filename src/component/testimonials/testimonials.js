@@ -45,7 +45,7 @@ export default function Testimonials() {
           <SwiperSlide key={index} className={styles.Swiper_Slide}>
             <div className={styles.card}>
               <IoPersonCircleSharp className={styles.avatar} />
-              <h3>{t.name}</h3>
+              <h2>{t.name}</h2>
               <div className={styles.stars}>
                 {[...Array(5)].map((_, i) => (
                   <AiFillStar key={i} color="#FFD700" />

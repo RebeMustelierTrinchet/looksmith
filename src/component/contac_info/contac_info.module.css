@@ -9,7 +9,7 @@
   align-items:center;
   gap: 2rem;
   padding: 20px;
- background-color: #c8ecfdc8;
+ background-color: #d1f0fdf3;
   border-radius: 10px;
 }
 
@@ -71,4 +71,9 @@
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .image img {
+    display: none;
+  }
 }

@@ -16,6 +16,7 @@
   font-size: 2rem;
   margin-bottom: 20px;
   color: #222;
+  text-align: center;
 }
 
 .text_container h3 {
@@ -24,6 +25,7 @@
   font-weight: 600;
   margin-top: 20px;
   margin-bottom: 10px;
+  text-indent: 20px;
 }
 
 .text_container p {
@@ -31,6 +33,7 @@
   line-height: 1.6;
   color: #fffafa;
   margin-bottom: 15px;
+  text-indent: 20px;
 }
 
 .texts {
@@ -74,13 +77,13 @@
     font-size: 1.2rem;
     margin-top: 15px;
     margin-bottom: 8px;
-     text-align: center !important;
+     /* text-align: center !important; */
   }
 
   .text_container p,
   .texts {
     font-size: 1rem;
-    text-indent: 20px;
+    
   }
 
   .image_container img {
