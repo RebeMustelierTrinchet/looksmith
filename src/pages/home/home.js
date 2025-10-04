@@ -11,6 +11,7 @@ import Benefits from "../../component/Benefits/Benefits";
 import QuickTipsCarousel from "../../component/tips/tips";
 import CallButton from "../../component/call/call";
 import Politics from "../../component/politics/politics";
+import ImportantServices from "../../component/important services/importantServices";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Text/>
         
         <Testimonials/>
+        <ImportantServices/>
         <Coverage/>
         
         <Action/>

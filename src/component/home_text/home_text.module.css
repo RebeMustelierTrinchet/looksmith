@@ -1,72 +1,164 @@
 .homePage {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #111;
   line-height: 1.6;
-  background-image: url('../../images/img.png'); /* imagen de fondo */
+  background-image: url("../../images/background.jpg");
   background-size: cover;
-  background-attachment: fixed; /* ¡fondo estático! */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Hero Section */
+/* ----- Sección Hero ----- */
 .hero {
-  height: 80vh;
+  height: 85vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
-  background: rgba(0,0,0,0.4); /* para que se vea texto sobre la imagen */
+  color: #fff;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+  backdrop-filter: blur(3px);
 }
 
-.tittle_1{
-  font-size: 3rem;
+.tittle_1 {
+  font-size: 3.5rem;
+  font-weight: 800;
   margin-bottom: 1rem;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .heroContent p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: #f3f4f6;
+  margin-bottom: 2rem;
 }
 
-/* Why Choose Us */
+/* ----- Sección Why Choose Us ----- */
 .whyChoose {
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
-    background: rgba(123, 122, 122, 0.4);
+  background: rgba(108, 120, 126, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  margin: 3rem 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
 }
 
 .tittle_2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #2563eb;
+  margin-bottom: 1.5rem;
+  color: black;
+  font-weight: 700;
+  position: relative;
+   font-weight: 600;
+}
+
+.tittle_2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: black;
+  margin: 0.5rem auto;
+  border-radius: 2px;
 }
 
 .whyChoose p {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   font-size: 1.1rem;
+   font-weight: 600;
   color: #111827;
+  line-height: 1.8;
 }
 
-
-.tittle_2 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
-}
-
-.btn{
+/* ----- Botón ----- */
+.btn {
   background-color: #2563eb;
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1rem 2.5rem;
   font-size: 1.1rem;
-  border-radius: 8px;
+  font-weight: 600;
+  border-radius: 10px;
   cursor: pointer;
-  transition: background 0.3s ease;
-}
-.btn:hover {
-  background-color: #1e40af;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
 }
 
-/* Features ya lo hicimos en Features.jsx + features.module.css */
+.btn:hover {
+  background-color: #1e40af;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.6);
+}
+
+/* ----- Responsive Design ----- */
+@media (max-width: 1024px) {
+  .tittle_1 {
+    font-size: 2.8rem;
+  }
+
+  .tittle_2 {
+    font-size: 1.8rem;
+  }
+
+  .whyChoose {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    padding: 1.5rem;
+  }
+
+  .tittle_1 {
+    font-size: 2.2rem;
+  }
+
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+
+  .whyChoose p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.9rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homePage {
+    background-attachment: scroll;
+  }
+
+  .tittle_1 {
+    font-size: 1.9rem;
+  }
+
+  .tittle_2 {
+    font-size: 1.4rem;
+  }
+
+  .whyChoose {
+    padding: 3rem 1rem;
+    margin: 2rem 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./benefit.module.css";
 import { FaCarSide, FaLock, FaShieldAlt, FaIdBadge, FaFileContract } from "react-icons/fa";
+import image from './../../images/key.png'
 
 export default function Features() {
   const cardsRef = useRef([]);
@@ -49,11 +50,11 @@ export default function Features() {
     title: "Insured",
     description: "We are fully insured in compliance with all applicable regulations, providing our clients with added assurance and peace of mind when using our professional locksmith services."
   },
-   {
-      icon: <FaLock />,
-      title: "Secure Payments",
-      description: "All transactions are encrypted and 100% safe."
-    },
+  //  {
+  //     icon: <FaLock />,
+  //     title: "Secure Payments",
+  //     description: "All transactions are encrypted and 100% safe."
+  //   },
   ];
 
   return (
@@ -73,7 +74,14 @@ export default function Features() {
               <p className={styles.description}>{feature.description}</p>
             </div>
           ))}
+
         </div>
+      
+           <img 
+        src={image}  
+        className={styles.image}  
+        alt="Car remote key with modern design" 
+      />
       </section>
     </section>
   );

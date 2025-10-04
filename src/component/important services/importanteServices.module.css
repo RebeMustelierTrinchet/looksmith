@@ -1,0 +1,171 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+}
+
+.title span {
+  color: var(--color-accent-blue);
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  color: #555;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: #e0e0ff;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2ff;
+  border-radius: 0.75rem;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: var(--color-accent-blue);
+  font-size: 1.8rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardText {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  text-indent: 20px;
+}
+
+.button {
+  background: var(--color-accent-blue);
+  color: white;
+  border: 2px solid var(--color-accent-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+  align-self: center;
+}
+
+.button:hover {
+  background: none;
+  border: 3px solid var(--color-accent-blue);
+  color: var(--color-accent-blue);
+}
+
+.ctaBox {
+  background: #eef2ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ctaTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.ctaText {
+  color: #555;
+  max-width: 600px;
+  text-align: center;
+}
+
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.whatsappBtn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.whatsappBtn:hover {
+  background: #e0e7ff;
+}
+
+.consultBtn {
+  background: var(--color-accent-blue);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.consultBtn:hover {
+  background: #3730a3;
+}
+
+@media (min-width: 768px) {
+  .ctaBox {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

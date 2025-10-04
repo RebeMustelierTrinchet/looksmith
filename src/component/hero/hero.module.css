@@ -16,8 +16,8 @@
   max-width: 1200px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
   gap: 2rem;
 }
 
@@ -132,10 +132,13 @@
 }
 
 .image {
-  max-width: 100%;
+  max-height: 55vh;
   height: auto;
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  /* background-color: #0077ff; */
+  border: 10px solid transparent;
+  outline: 3px solid var(--color-accent-blue);
 }
 
 /* Responsive */
@@ -175,22 +178,29 @@
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    background-color: #d0f8ffa4;
-     height: 50vh !important;
+    background-color:#c4d0f783;
+    height: 50vh !important;
+    padding: 0 0 !important;
 
   }
   .hero{
      
-      background-image: url('./../../images/img.png');
+      /* background-image: url('./../../images/img.png'); */
 
-      background-image: url('./../../images/img.png');
+      background-image: url('./../../images/key\ and\ car.png');
       background-size: cover;       /* que ocupe todo */
-      background-position: center;  /* centrada */
+      background-position: bottom; 
       background-repeat: no-repeat;
+       height: 50vh !important;
+       width: 100% !important;
+       padding:0;
+    
     }
 
   .title {
     font-size: 2rem;
+    margin-top: 40px !important;
+    /* background-color: aquamarine; */
   }
 
   .subtitle {

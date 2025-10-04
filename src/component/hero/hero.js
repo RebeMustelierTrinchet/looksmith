@@ -1,5 +1,5 @@
 import styles from "./hero.module.css";
-import image from "./../../images/img.png";
+import image from "./../../images/key and car.png";
 import { BsTelephoneXFill } from "react-icons/bs";
 import { FaKey } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";

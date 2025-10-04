@@ -2,8 +2,8 @@
 
 /* Fondo */
 :root {
-  --color-background: #737373; /* fondo principal negro */
-  --color-grey-blue:rgba(164, 231, 237, 0.299);
+  --color-background: #797979; /* fondo principal negro */
+  --color-grey-blue:#eef2ff;
   --color-secondary-background: #111111; /* para secciones secundarias */
   
   /* Texto */
