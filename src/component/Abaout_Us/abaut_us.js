@@ -15,7 +15,7 @@ export default function AboutUs() {
         </p>
       </div>
       <div className={styles.image_container}>
-        <img src={aboutImage} alt="About our locksmith service" />
+        <img src={aboutImage} alt="About our locksmith service" loading="lazy"/>
       </div>
     </section>
   );

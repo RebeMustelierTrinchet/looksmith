@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "./politics.module.css";
-import aboutImage from "./../../images/Vibe Logo.png"
+import aboutImage from "./../../images/molde key.png"
 
 export default function Politics() {
   return (
     <section className={styles.about_container} id="politics">
       <div className={styles.image_container}>
-        <img src={aboutImage} className={styles.image} alt="About our locksmith service" />
+        <img src={aboutImage} className={styles.image} loading="lazy" alt="About our locksmith service" />
       </div>
       <div className={styles.text_container}>
         <h2 className={styles.title}>Privacy Policy</h2>

@@ -80,6 +80,7 @@ export default function Features() {
            <img 
         src={image}  
         className={styles.image}  
+        loading="lazy"
         alt="Car remote key with modern design" 
       />
       </section>

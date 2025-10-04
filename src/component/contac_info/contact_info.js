@@ -32,7 +32,7 @@ function ContactInfo() {
 
       {/* Div derecho con imagen */}
       <div className={styles.image}>
-        <img src={contactImage} alt="Contact" />
+        <img src={contactImage} alt="Contact" loading="lazy"/>
       </div>
     </div>
     </section>

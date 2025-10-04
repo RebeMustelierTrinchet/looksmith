@@ -6,11 +6,11 @@ import styles from "./navbar.module.css";
 import padlock_hover from "./../../icons/open-padlock.png";
 import padlock_open from "./../../icons/unlock-padlock.png";
 import padlock_close from "./../../icons/padlock.png";
-import logo from "./../../images/Vibe Logo.png"
+import logo from "./../../images/Vibe Logo-compressed.jpg"
 
 // Frases divertidas
 const phrases = [
-  "We unlock smiles 🔑          ",
+  "We unlock smiles          ",
   "Locked out? Not locked down ",
   "Your key to peace of mind ",
   "Lost keys, found solutions ",
@@ -100,7 +100,7 @@ export default function Navbar() {
       {/* Logo a la derecha */}
       <div className={styles.logo}>
         <Link to="/">
-        <img src={logo} className={styles.img_logo} alt="locksmith logo"/>
+        <img src={logo} className={styles.img_logo} alt="locksmith logo" loading="lazy"/>
         </Link>
       </div>
     </nav>

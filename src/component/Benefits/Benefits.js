@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef } from "react";
-import styles from "./Benefits.module.css";
+import styles from "./../benefit/benefit.module.css";
 import { FaUserShield, FaCheckCircle, FaTools } from "react-icons/fa";
 
 export default function Benefits() {
@@ -47,14 +47,14 @@ const cardsRef = useRef([]);
   return (
     <section className={styles.main_container_Section}>
       
-      <section className={styles.benefitsSection}>
+      <section className={styles.featuresSection}>
         <hr className={styles.line}></hr>
         <h2 className={styles.sectionTitle}>Trust & Reliability</h2>
-        <div className={styles.benefitsGrid}>
+        <div className={styles.featuresGrid}>
           {benefits.map((benefit, index) => (
                <div
               key={index}
-              className={`${styles.benefitCard} ${styles.hidden}`} // inicia oculto
+              className={`${styles.featureCard} ${styles.hidden}`} // inicia oculto
               ref={(el) => (cardsRef.current[index] = el)}
             >
               <div className={styles.icon}>{benefit.icon}</div>
