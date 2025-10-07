@@ -6,7 +6,7 @@ import styles from "./navbar.module.css";
 import padlock_hover from "./../../icons/open-padlock.png";
 import padlock_open from "./../../icons/unlock-padlock.png";
 import padlock_close from "./../../icons/padlock.png";
-import logo from "./../../images/Vibe Logo.webp"
+import logo from "./../../images/Vibe Logo-compressed.jpg"
 
 // Frases divertidas
 const phrases = [
