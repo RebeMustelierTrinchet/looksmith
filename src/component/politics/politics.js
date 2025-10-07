@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./politics.module.css";
-import aboutImage from "./../../images/molde key.png"
+import aboutImage from "./../../images/molde key.webp"
 
 export default function Politics() {
   return (

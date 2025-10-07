@@ -1,11 +1,25 @@
 import React from "react";
 import styles from "./hero.module.css";
-import heroImg from "./../../images/key and car.png"; // ✅ Usa imagen optimizada WebP
+import heroImg from "./../../images/key and car.webp"; // ✅ Usa imagen optimizada WebP
 import { BsTelephoneXFill } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa6";
 import { TbMessageCircle } from "react-icons/tb";
 
+import { useEffect, useState } from "react";
+
+
+ 
+
 export default function Hero() {
+   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
   return (
     <section className={styles.hero} aria-label="Locksmith services and key duplication">
       <div className={styles.container}>
@@ -49,14 +63,16 @@ export default function Hero() {
 
         {/* Imagen */}
         <div className={styles.imageBox}>
+          {!isMobile && (
           <img
             src={heroImg}
-            alt="Locksmith working on a car key"
-            className={styles.image}
-            fetchpriority="high"  // ✅ LCP optimizado
-            decoding="async"
+            alt="Locksmith working"
+            fetchpriority="high"
             loading="eager"
+            decoding="async"
+            className={styles.image}
           />
+        )}
         </div>
       </div>
     </section>
