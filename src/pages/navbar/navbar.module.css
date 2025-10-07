@@ -139,6 +139,7 @@
 
   .logo {
     order: 2;
+    width: 200px;
     margin-top: 0.3rem;
   }
 
