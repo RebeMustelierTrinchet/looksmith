@@ -24,6 +24,11 @@ export default function Testimonials() {
         slidesPerView={3}
         spaceBetween={30}
         pagination={{ clickable: true }}
+        observer={true}         // 👈 observa cambios en el contenedor
+        observeParents={true}   // 👈 observa también al padre
+        watchSlidesProgress={true} // mejora el cálculo inicial
+        preloadImages={false}   // 👈 evita cargar imágenes antes de tiempo
+        lazy={true}            // 👈 activa carga diferida
         modules={[Pagination]}
         breakpoints={{
           '@0.00': {

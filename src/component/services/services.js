@@ -96,6 +96,11 @@ export default function ServicesCarousel() {
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         spaceBetween={30}
+        observer={true}         // 👈 observa cambios en el contenedor
+        observeParents={true}   // 👈 observa también al padre
+        watchSlidesProgress={true} // mejora el cálculo inicial
+        preloadImages={false}   // 👈 evita cargar imágenes antes de tiempo
+        lazy={true}            // 👈 activa carga diferida
         breakpoints={{
           0: { slidesPerView: 1 },
           768: { slidesPerView: 2 },

@@ -64,10 +64,16 @@ export default function QuickTipsCarousel() {
           modules={[Pagination]}
           autoplay={{ delay: 8000 }}
           loop={true}
+          observer={true}         // 👈 observa cambios en el contenedor
+          observeParents={true}   // 👈 observa también al padre
+          watchSlidesProgress={true} // mejora el cálculo inicial
+          preloadImages={false}   // 👈 evita cargar imágenes antes de tiempo
+          lazy={true}            // 👈 activa carga diferida
           breakpoints={{
             1024: { slidesPerView: 3 },
             768: { slidesPerView: 2 },
             0: { slidesPerView: 1 },
+
           }}
           className={styles.mySwiper}
         >
