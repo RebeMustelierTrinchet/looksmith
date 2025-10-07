@@ -1,7 +1,5 @@
 
-.main_container_Section{
-  /* background-image: url('./../../images/key_background.png'); */
-}
+
 .container {
   display: flex;
   flex-wrap: wrap;

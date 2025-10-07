@@ -17,10 +17,20 @@ export default function Footer() {
         <div className={styles.infoBlock}>
           <h3 className={styles.title}>Follow Us</h3>
           <div className={styles.socials}>
-            <a href="https://www.facebook.com/VibeLocksmith" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.facebook.com/VibeLocksmith"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit our Facebook page"
+            >
               <FaFacebook />
             </a>
-            <a href="https://www.tiktok.com/@vibe.locksmith" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.tiktok.com/@vibe.locksmith"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit our TikTok profile"
+            >
               <FaTiktok />
             </a>
           </div>
