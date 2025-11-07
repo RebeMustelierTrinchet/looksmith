@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./abaut_us.module.css";
-import aboutImage from "../../images/img.png"; 
+import aboutImage from "../../images/about_us.jpg"; 
 
 export default function AboutUs() {
   return (
