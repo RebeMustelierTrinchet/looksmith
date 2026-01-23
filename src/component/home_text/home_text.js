@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./home_text.module.css";
-import heroImage from "../../images/img.png"; // tu imagen de hero
 
 export default function Text() {
   return (

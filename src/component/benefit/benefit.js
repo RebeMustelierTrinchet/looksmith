@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./benefit.module.css";
-import { FaCarSide, FaLock, FaShieldAlt, FaIdBadge, FaFileContract } from "react-icons/fa";
+import { FaCarSide, FaShieldAlt, FaIdBadge, FaFileContract } from "react-icons/fa";
 import image from './../../images/key.png'
 
 export default function Features() {
