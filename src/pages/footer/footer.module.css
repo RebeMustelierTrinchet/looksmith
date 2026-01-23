@@ -21,7 +21,7 @@
 .title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: #4da6ff; /* azul llamativo */
+  color: var(--color-logo-blue); /* azul llamativo */
 }
 
 .socials {
@@ -37,7 +37,7 @@
 }
 
 .socials a:hover {
-  color: #4da6ff; /* efecto hover */
+  color:var(--color-logo-blue); /* efecto hover */
 }
 
 .copy {

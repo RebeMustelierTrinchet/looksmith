@@ -31,6 +31,7 @@
   font-weight: 750;
   color: #222;
   margin-bottom: 1rem;
+   color: var(--color-logo-blue);
 }
 
 .subtitle {
@@ -200,6 +201,7 @@
   .title {
     font-size: 2rem;
     margin-top: 40px !important;
+    color:var( --color-logo-blue)
     /* background-color: aquamarine; */
   }
 

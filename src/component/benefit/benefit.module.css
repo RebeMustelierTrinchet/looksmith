@@ -21,7 +21,7 @@
 .sectionTitle {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: black;
+ color: var(--color-logo-blue);
   font-weight: 750;
   
 }

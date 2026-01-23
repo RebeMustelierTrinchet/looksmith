@@ -12,7 +12,7 @@ export default function ContacUs() {
       <div className={styles.container}>
         <CallButton/>
         <Hero/>
-        <ContactForm/>
+        {/* <ContactForm/> */}
         <ContactInfo/>
        
         

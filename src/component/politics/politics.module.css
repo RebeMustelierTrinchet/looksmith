@@ -43,9 +43,9 @@
 }
 
 .title {
-  font-size: 2.8rem;
+  font-size: 2.4rem ;
   font-weight: 800;
-  color: #fffefe;
+  color: var(--color-accent-blue) !important;
   margin-bottom: 1rem;
 }
 

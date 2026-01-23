@@ -11,7 +11,7 @@ export default function QuickTipsCarousel() {
   const tips =  [
   {
     icon: <FaLightbulb />,
-    title: "How to Avoid Losing Your Keys 🔑",
+    title: "How to Avoid Losing Your Keys ",
     content: "Stop hiding your keys in a 'safe place.' Use noticeable keychains and always have a spare hidden somewhere. Your dog won't always find it before you do."
   },
   {
@@ -21,32 +21,32 @@ export default function QuickTipsCarousel() {
   },
   {
     icon: <FaHome />,
-    title: "5 Home Security Tips 🏠",
-    content: "1️⃣ Change your locks when you move. 2️⃣ Don’t hide keys under the doormat. 3️⃣ Install automatic lights. 4️⃣ Consider keyless systems. 5️⃣ Keep your home safe and happy."
+    title: "5 Home Security Tips ",
+    content: "1️ Change your locks when you move. 2️ Don’t hide keys under the doormat. 3️ Install automatic lights. 4️ Consider keyless systems. 5️ Keep your home safe and happy."
   },
   {
     icon: <FaKey />,
-    title: "Spare Keys for Your New Home 🔑",
-    content: "Do you only have one key to your new house? Danger! We make duplicates for your mom, your partner, and even your dog (well, almost 🐶)."
+    title: "Spare Keys for Your New Home ",
+    content: "Do you only have one key to your new house? Danger! We make duplicates for your mom, your partner, and even your dog (well, almost )."
   },
   {
     icon: <FaKey />,
-    title: "Secure Key Duplication 🔐",
+    title: "Secure Key Duplication ",
     content: "We only duplicate your keys using professional techniques so no one else can open them. Fast, secure, and reliable copies."
   },
   {
     icon: <FaLock />,
-    title: "Don’t Wait for an Emergency ⏱️",
+    title: "Don’t Wait for an Emergency ",
     content: "Avoid the stress of being locked out. Always have a spare key and a trusted locksmith contact. Better safe than calling at midnight in pajamas with cold coffee."
   },
   {
     icon: <FaShieldAlt />,
-    title: "Lock Security Matters 🔒",
+    title: "Lock Security Matters ",
     content: "Install certified locks and change your keys if you lose any. A small step now prevents theft and headaches later."
   },
   {
     icon: <FaHome />,
-    title: "Smart Keys, Safe Home 🏡",
+    title: "Smart Keys, Safe Home ",
     content: "Keyless entry systems are convenient and secure. No more lost keys, and you can control home access from your phone. Futuristic and reliable."
   }
 ];
@@ -56,7 +56,7 @@ export default function QuickTipsCarousel() {
     <section className={styles.main_container_Section}>
       <section className={styles.tipsSection}>
         <hr className={styles.line}></hr>
-        <h2 className={styles.sectionTitle}>Quick Tips & Fun Advice</h2>
+        <h2 className={styles.sectionTitle}>Quick Tips & Advice</h2>
         <Swiper
           slidesPerView={3}
           spaceBetween={30}

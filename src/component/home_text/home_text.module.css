@@ -26,17 +26,16 @@
   backdrop-filter: blur(3px);
 }
 
-.tittle_1 {
+.title_1,
+.title_2  {
   font-size: 3.5rem;
-  font-weight: 800;
+  font-weight: 750;
   margin-bottom: 1rem;
-  color: #fff;
-  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: var(--color-logo-blue);
 }
 
-.heroContent p {
+.text {
   font-size: 1.4rem;
-  color: #f3f4f6;
   margin-bottom: 2rem;
 }
 
@@ -52,30 +51,13 @@
   max-width: 1000px;
 }
 
-.tittle_2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: black;
-  font-weight: 700;
-  position: relative;
-   font-weight: 600;
-}
 
-.tittle_2::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: black;
-  margin: 0.5rem auto;
-  border-radius: 2px;
-}
 
-.whyChoose p {
+.text2 {
   max-width: 800px;
   margin: 0 auto 2rem;
   font-size: 1.1rem;
-   /* font-weight: 600; */
+  text-align: start;
   color: #111827;
   line-height: 1.8;
 }

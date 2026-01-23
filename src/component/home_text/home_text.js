@@ -9,10 +9,10 @@ export default function Text() {
   {/* Why Choose Us */}
       <section className={styles.whyChoose}>
         <h1 className={styles.title_1}>KeyMaster</h1>
-        <p>Your key to peace of mind </p>
+        <p  className={styles.text}>Your key to peace of mind </p>
 
         <h2 className={styles.title_2}>Why Choose Us?</h2>
-        <p>
+        <p className={styles.text2}>
           We’ve all had that movie-moment: you arrive at the parking lot, ready to go…and your car key decides to take a vacation inside the vehicle.
           Don’t worry! Fast, safe, and precise car key duplication. Traditional keys, remote fobs, or smart keys — we copy them in minutes so you never lose control.
         </p>
