@@ -23,7 +23,7 @@ export default function Footer() {
               rel="noreferrer"
               aria-label="Visit our Facebook page"
             >
-              <FaFacebook />
+              <FaFacebook className={styles.icon}/>
             </a>
             <a
               href="https://www.tiktok.com/@vibe.locksmith"
@@ -31,7 +31,7 @@ export default function Footer() {
               rel="noreferrer"
               aria-label="Visit our TikTok profile"
             >
-              <FaTiktok />
+              <FaTiktok className={styles.icon} />
             </a>
           </div>
         </div>

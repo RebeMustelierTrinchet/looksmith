@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./benefit.module.css";
 import { FaCarSide, FaShieldAlt, FaIdBadge, FaFileContract } from "react-icons/fa";
-import image from './../../images/key.png'
+import image from './../../images/IMG_7648 (1).jpeg'
 
 export default function Features() {
   const cardsRef = useRef([]);

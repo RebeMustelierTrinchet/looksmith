@@ -21,23 +21,44 @@
 .title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--color-logo-blue); /* azul llamativo */
+  color: var(--color-accent-blue); /* azul llamativo */
 }
 
 .socials {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 .socials a {
   color: #fff;
-  transition: color 0.3s;
+  transition: 0.4s;
+  /* background-color: aqua; */
+  width: 60px;
+  height: 60px;
+  text-align: center !important;
+  display: flex;
+  border-radius: 50px;
 }
 
+.icon{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+
 .socials a:hover {
-  color:var(--color-logo-blue); /* efecto hover */
+  color:var(--color-accent-blue); /* efecto hover */
+  font-size: 3.5rem;
+  transform: rotate(20deg);
+  background-color: var(--color-accent-blue);
+  
 }
 
 .copy {

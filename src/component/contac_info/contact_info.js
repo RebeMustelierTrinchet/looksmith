@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./contac_info.module.css";
 import { FaFacebook, FaTiktok } from "react-icons/fa";
-import contactImage from "./../../images/img.png"; // Pon tu imagen aquí
+import contactImage from "./../../images/IMG_7649 (2).jpeg"; // Pon tu imagen aquí
 
 function ContactInfo() {
   return (
@@ -32,7 +32,7 @@ function ContactInfo() {
 
       {/* Div derecho con imagen */}
       <div className={styles.image}>
-        <img src={contactImage} alt="Contact" loading="lazy"/>
+        <img src={contactImage} className={styles.image} alt="Contact" loading="lazy"/>
       </div>
     </div>
     </section>

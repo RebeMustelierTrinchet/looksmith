@@ -7,7 +7,7 @@
   align-items:center;
   gap: 2rem;
   padding: 20px;
- background-color: #d1f0fdf3;
+  background-color: #d1f0fdf3;
   border-radius: 10px;
 }
 
@@ -15,9 +15,9 @@
 
 .info {
   /* flex: 1; */
-  min-width: 250px;
+  min-width: 200px;
   /* margin-left: auto; */
-   flex: 1 1 500px !important;
+   /* flex: 1 1 500px !important; */
    margin-right: -10px  !important;
    justify-content: end;
    display: flex;
@@ -56,20 +56,18 @@
 }
 
 .image {
-  flex: 1 1 400px !important; 
+  /* flex: 1 1 400px !important;  */
   /* flex: 1; */
-  min-width: 250px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 250px;
+  border-radius: 30px;
   
 }
 
-.image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+
 @media (max-width: 768px) {
   .image img {
     display: none;
