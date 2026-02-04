@@ -13,7 +13,7 @@ export default function ImportantServices({ onRequest }) {
     },
     {
       Icon: FaLaptopCode,
-      title: "Dealer Level Programming",
+      title: "Programming",
       description:
         "From keys to electronic modules, we handle dealer-level programming without the dealership price.",
     },
@@ -63,32 +63,16 @@ export default function ImportantServices({ onRequest }) {
         ))}
       </div>
 
-      <div className={styles.ctaBox}>
-        <div>
-          <h4 className={styles.ctaTitle}>Not sure which service is right for you?</h4>
-          <p className={styles.ctaText}>
-            Contact us for a free consultation — we’ll help you choose the perfect dealer-level service for your vehicle.
-          </p>
-        </div>
-
         <div className={styles.ctaButtons}>
           <a
             href="https://wa.me/1234567890?text=Hi%20I%20would%20like%20advice%20on%20a%20dealer%20service"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.whatsappBtn}
+            className={styles.consultBtn}
           >
             Contact via WhatsApp
           </a>
-
-          <button
-            onClick={() => onRequest?.({ title: 'Personal Consultation' })}
-            className={styles.consultBtn}
-          >
-            Request Consultation
-          </button>
         </div>
-      </div>
     </section>
   );
 }

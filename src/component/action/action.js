@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./action.module.css";
-import img from "./../../images/key in car.webp";
+import img from "./../../images/key in car.jpg";
 
 // Icons
 import { BsTelephoneFill } from "react-icons/bs";

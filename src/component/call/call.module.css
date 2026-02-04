@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: var(--color-accent-blue); /* azul llamativo */
+  background-color: var(--color-logo-blue); /* azul llamativo */
   color: #fff;
   font-weight: bold;
   padding: 0.8rem 1.2rem;
@@ -18,7 +18,7 @@
 }
 
 .callButton:hover {
-  background-color: #3399ff;
+  background-color: var( --color-accent-blue);
   transform: scale(1.05);
 }
 
