@@ -7,7 +7,7 @@ export default function ImportantServices({ onRequest }) {
   const services = [
     {
       Icon: MdMiscellaneousServices,
-      title: "Dealer Level Diagnosis",
+      title: "Diagnostics",
       description:
         "Advanced diagnostic tools just like the dealership—pinpointing issues quickly and accurately.",
     },
@@ -19,7 +19,7 @@ export default function ImportantServices({ onRequest }) {
     },
     {
       Icon: FaSyncAlt,
-      title: "Dealer Level Software Update",
+      title: "Software Update",
       description:
         "Keep your vehicle running at its best with the latest dealer-approved software updates.",
     },
