@@ -21,7 +21,7 @@
 .title {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-  color: var(--color-accent-blue); /* azul llamativo */
+  color: var(  --color-footer); /* azul llamativo */
 }
 
 .socials {

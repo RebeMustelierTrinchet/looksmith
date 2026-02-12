@@ -39,7 +39,7 @@ export default function Footer() {
         {/* Licencia */}
         <div className={styles.infoBlock}>
           <h3 className={styles.title}>License</h3>
-          <p>Lic# B29755301</p>
+          <p>Lic# B31113301</p>
         </div>
       </div>
 
