@@ -8,7 +8,7 @@ export default function AboutUs() {
       <div className={styles.text_container}>
         <h2 className={styles.title}>About Us</h2>
         <p className={styles.subtitle}>
-          We, at Vibe Locksmith, provide top-level locksmith services that match your specific needs. Whether you need an emergency lockout, key replacement, or other security solutions, you can rest assured that our experienced technicians will be there to help.
+          We, at XKEY, provide top-level locksmith services that match your specific needs. Whether you need an emergency lockout, key replacement, or other security solutions, you can rest assured that our experienced technicians will be there to help.
         </p>
         <p className={styles.subtitle}>
           Trust, credibility and customer satisfaction is what our method is surrounded by. Satisfaction Guaranteed.

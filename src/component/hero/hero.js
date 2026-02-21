@@ -32,7 +32,7 @@ export default function Hero() {
             <a
               href="tel:9367773999"
               className={styles.cta}
-              aria-label="Call Vibe Locksmith"
+              aria-label="Call XKEY"
             >
               <BsTelephoneXFill className={styles.icon} />
               Call Us
@@ -43,7 +43,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.cta}
-              aria-label="WhatsApp Vibe Locksmith"
+              aria-label="WhatsApp XKEY"
             >
               <FaWhatsapp className={styles.icon} />
               WhatsApp
@@ -52,7 +52,7 @@ export default function Hero() {
             <a
               href="sms:9367773999?body=Hi%2C%20I%20am%20interested%20in%20your%20locksmith%20services"
               className={styles.cta}
-              aria-label="SMS Vibe Locksmith"
+              aria-label="SMS XKEY"
             >
               <TbMessageCircle className={styles.icon} />
               SMS
