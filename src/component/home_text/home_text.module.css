@@ -85,7 +85,7 @@
 /* ----- Responsive Design ----- */
 @media (max-width: 1024px) {
   .tittle_1 {
-    font-size: 2.8rem;
+    font-size: 2.0rem;
   }
 
   .tittle_2 {
@@ -103,8 +103,12 @@
     padding: 1.5rem;
   }
 
-  .tittle_1 {
+  .title_1 {
     font-size: 2.2rem;
+ 
+  }
+   .title_2 {
+    font-size: 1.8rem;
   }
 
   .heroContent p {
@@ -126,11 +130,13 @@
     background-attachment: scroll;
   }
 
-  .tittle_1 {
-    font-size: 1.9rem;
+  .title_1 {
+    font-size: 2.2rem;
+    
   }
 
-  .tittle_2 {
+
+  .title_2 {
     font-size: 1.4rem;
   }
 
