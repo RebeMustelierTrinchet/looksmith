@@ -14,9 +14,9 @@ function ContactInfo() {
       <div className={styles.info}>
         <div className={styles.text_conteiner}>
           <h2>Contact Info</h2>
-          <p><strong>Email:</strong> damarco.tx@gmail.com</p>
-          <p><strong>Phone:</strong> +936 777 3999</p>
-          <p>Lic# B29755301</p>
+          <p><strong>Email:</strong> Xkey.tx@gmail.com</p>
+          <p><strong>Phone:</strong> +1 936 777 3999</p>
+          <p>Lic#B31113301</p>
           <p>Monday - Saturday</p>
           <p>8:00am - 5:00pm</p>
           <div className={styles.social}>

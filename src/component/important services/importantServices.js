@@ -13,7 +13,7 @@ export default function ImportantServices({ onRequest }) {
     },
     {
       Icon: FaLaptopCode,
-      title: "Programming",
+      title: "Coding",
       description:
         "From keys to electronic modules, we handle dealer-level programming without the dealership price.",
     },

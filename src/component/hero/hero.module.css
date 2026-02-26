@@ -31,7 +31,11 @@
   font-weight: 750;
   color: #222;
   margin-bottom: 1rem;
-   color: var(--color-logo-blue);
+   color: var(--color-accent-blue);
+}
+.title_2{
+ color: var(--color-logo-blue);
+ text-decoration: none;
 }
 
 .subtitle {

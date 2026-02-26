@@ -18,7 +18,7 @@ export default function Footer() {
           <h3 className={styles.title}>Follow Us</h3>
           <div className={styles.socials}>
             <a
-              href="https://www.facebook.com/VibeLocksmith"
+              href="https://www.facebook.com/XKey.llc"
               target="_blank"
               rel="noreferrer"
               aria-label="Visit our Facebook page"
@@ -26,7 +26,7 @@ export default function Footer() {
               <FaFacebook className={styles.icon}/>
             </a>
             <a
-              href="https://www.tiktok.com/@vibe.locksmith"
+              href="https://www.tiktok.com/@XKey.llc"
               target="_blank"
               rel="noreferrer"
               aria-label="Visit our TikTok profile"

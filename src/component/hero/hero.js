@@ -25,7 +25,7 @@ export default function Hero() {
       <div className={styles.container}>
         {/* Texto */}
         <div className={styles.textBox}>
-          <h1 className={styles.title}>Coded. Secured.</h1>
+          <h1 className={styles.title}>Coded. <a className={styles.title_2}> Secured.</a></h1>
 
           {/* Botones */}
           <div className={styles.actions}>
@@ -38,7 +38,7 @@ export default function Hero() {
               Call Us
             </a>
 
-            <a
+            {/* <a
               href="https://wa.me/9367773999?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services"
               target="_blank"
               rel="noopener noreferrer"
@@ -56,7 +56,7 @@ export default function Hero() {
             >
               <TbMessageCircle className={styles.icon} />
               SMS
-            </a>
+            </a> */}
           </div>
         </div>
 

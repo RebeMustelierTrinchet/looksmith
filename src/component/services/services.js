@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FaCarSide, FaKey, FaHome, FaLock, FaFingerprint, FaBuilding, FaLaptopCode, FaSyncAlt } from "react-icons/fa";
 import { MdMiscellaneousServices } from "react-icons/md";
+import image from "./../../images/Xkey Logo PNG big.png"
 
 
 export default function ServicesCarousel() {
@@ -69,19 +70,19 @@ export default function ServicesCarousel() {
     },
     {
     icon: <MdMiscellaneousServices />,
-    title: "Dealer Level Diagnosis",
+    title: "Automobile Diagnostics",
     description:
       "Advanced diagnostic tools just like the dealership—pinpointing issues quickly and accurately."
   },
   {
     icon: <FaLaptopCode />,
-    title: "Dealer Level Programming",
+    title: "ECU Programming",
     description:
       "From keys to electronic modules, we handle dealer-level programming without the dealership price."
   },
   {
     icon: <FaSyncAlt />,
-    title: "Dealer Level Software Update",
+    title: "Software Update",
     description:
       "Keep your vehicle running at its best with the latest dealer-approved software updates."
   }
@@ -111,9 +112,11 @@ export default function ServicesCarousel() {
         {services.map((service, index) => (
           <SwiperSlide key={index}>
             <div className={styles.card}>
-              <div className={styles.icon}>{service.icon}</div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+                <div className={styles.card_cont}>
+                <div className={styles.icon}>{service.icon}</div>
+                <h3>{service.title}</h3>
+                <p>{service.description}</p>
+              </div>
             </div>
           </SwiperSlide>
         ))}

@@ -13,7 +13,7 @@ import { TbMessageCircle } from "react-icons/tb";
  * - phrases: array de strings -> frases que rotan
  */
 export default function Action({
-  phone = "+9367773999", // reemplaza por el número real
+  phone = "9367773999", // reemplaza por el número real
   phrases = [
     "Locked out? Call us now 📞",
     "Key duplicates in minutes — call today ⏱️",
@@ -60,7 +60,7 @@ export default function Action({
             Call now
           </a>
 
-          <a
+          {/* <a
             href={waHref}
             target="_blank"
             rel="noopener noreferrer"
@@ -78,7 +78,7 @@ export default function Action({
           >
             <TbMessageCircle className={styles.icon} />
             SMS Message
-          </a>
+          </a> */}
         </div>
 
         <p className={styles.smallText}>
