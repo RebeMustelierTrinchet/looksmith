@@ -1,0 +1,24 @@
+/* colors.module.css */
+
+/* Fondo */
+:root {
+  --color-background: #797979; /* fondo principal negro */
+  --color-grey-blue:#e9edf5;
+  --color-secondary-background: #111111; /* para secciones secundarias */
+  
+  /* Texto */
+  --color-text: #ffffff; /* todo el texto blanco */
+  --color-subtext: #dddddd; /* para textos menos importantes */
+  
+  /* Acentos / botones / iconos */
+  --color-accent-blue:#1E63FF;  
+    --color-logo-blue: #0B3D91;
+  --color-accent-gold: #FFD700; /* dorado para detalles y estrellas */
+  --color-accent-gray: #444444; /* gris para separadores, bordes */
+    --color-footer: #1E63FF;/*ra separadores, bordes */
+  
+  /* Estados */
+  
+  /* Bordes y sombras */
+  --color-border: #222222;
+}

@@ -1,0 +1,245 @@
+@import './../colors.module.css';
+
+.hero {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
+  background-color: var(--color-grey-blue);
+  
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  gap: 2rem;
+}
+
+/* Text */
+.textBox {
+  flex: 1 1 500px;
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: 750;
+  color: #222;
+  margin-bottom: 1rem;
+   color: var(--color-accent-blue);
+}
+.title_2{
+ color: var(--color-logo-blue);
+ text-decoration: none;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;  /* mejor contraste que #303030 */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+
+/* Buttons */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  
+}
+.cta {
+  /* 🎨 Colores accesibles */
+  --c1: var(--color-accent-blue);
+  --c2: color-mix(in srgb, var(--color-accent-blue) 70%, white);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Fondo con gradiente accesible */
+  background: linear-gradient(90deg, var(--c1), var(--c2));
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+
+  /* Espaciado y forma */
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+
+  /* Texto */
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;                /* ✅ texto blanco estándar */
+  line-height: 1.2;           /* mejor legibilidad */
+
+  /* Accesibilidad: contraste y enfoque */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: 
+    background-position 0.6s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.cta:hover {
+  background-position: 100% 0%;  /* desplaza gradiente */
+  transform: translateY(-2px);   /* efecto flotante */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+.cta:active {
+  transform: scale(0.96); /* efecto táctil en móviles */
+}
+
+/* 🔹 Accesible para teclado */
+.cta:focus-visible {
+  outline: 3px solid #000;      /* borde negro para máximo contraste */
+  outline-offset: 4px;
+}
+
+
+.icon {
+  border: 2px solid white;
+  padding: 5px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: var(--color-accent-blue) !important;
+  margin-right: 10px;
+}
+
+.secondary {
+  border: 2px solid #0077ff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0077ff;
+  transition: 0.3s;
+}
+
+.secondary:hover {
+  background: #0077ff;
+  color: white;
+}
+
+/* Image */
+.imageBox {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-height: 55vh;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  /* background-color: #0077ff; */
+  border: 10px solid transparent;
+  outline: 3px solid var(--color-accent-blue);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.9rem;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+  .hero{
+    min-height: 50vh;
+  }
+  .textBox{
+    max-height: 38vh;
+  }
+}
+
+
+
+/* ====================== */
+/* 📱 Mobile (≤768px) */
+/* ====================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color:#c4d0f783;
+    height: 50vh !important;
+    padding: 0 0 !important;
+
+  }
+  .hero{
+     
+      /* background-image: url('./../../images/img.png'); */
+
+      background-image: url('./../../images/key\ and\ car.webp');
+      background-size: cover;       /* que ocupe todo */
+      background-position: bottom; 
+      background-repeat: no-repeat;
+       height: 50vh !important;
+       width: 100% !important;
+       padding:0;
+    
+    }
+
+  .title {
+    font-size: 2rem;
+    margin-top: 40px !important;
+    color:var( --color-logo-blue)
+    /* background-color: aquamarine; */
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+
+  .actions {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .cta {
+    width: 100%;   /* 🔹 Botones ocupan todo el ancho en móvil */
+    max-width: 280px;
+  }
+
+
+}
+
+/* ====================== */
+/* 📱 Tablet (769px–1024px) */
+/* ====================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .image {
+    max-width: 90%;
+  }
+}

@@ -1,0 +1,137 @@
+.about_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas en desktop */
+  gap: 40px;
+  align-items: start;
+  padding: 60px 10%;
+  background-color:rgb(21, 21, 21);
+}
+
+/* Texto */
+.text_container {
+  font-family: Arial, sans-serif;
+}
+
+.text_container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffeeee;
+  text-align: center;
+}
+
+.text_container h3 {
+  font-size: 1.4rem;
+  color: #fcfcfc;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-indent: 20px;
+}
+
+.text_container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fffafa;
+  margin-bottom: 15px;
+  text-indent: 20px;
+}
+
+.texts {
+  font-size: 1.2rem;
+  color: white !important;
+  margin-bottom: 1.7rem;
+}
+
+.title {
+  font-size: 2.4rem ;
+  font-weight: 800;
+  color: var(--color-accent-blue) !important;
+  margin-bottom: 1rem;
+}
+
+/* Imagen */
+.image_container  {
+  width: 50vh;
+  max-width: 450px;
+  height: 55vh;
+  /* align-items: center; */
+  justify-content: end;
+  display: flex;
+  border-radius: 50%;
+  margin-top: 20px;
+  /* border: 8px solid black; */
+  background-color: black;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  /* overflow: hidden; */
+  padding: 0;
+}
+
+.image{
+  width: 110%;
+  height: auto;
+  margin-bottom: -5px;
+  /* background-color: aqua; */
+  border-radius: 0 50% 50% 0%;
+}
+
+/* ========================= */
+/* 📱 Mobile (≤768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .about_container {
+    grid-template-columns: 1fr; /* Una columna */
+    padding: 0 20px;
+    gap: 30px;
+    text-align: start;
+  }
+
+  .text_container h2 {
+    font-size: 2rem;
+     text-align: center !important;
+  }
+
+  .text_container h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-bottom: 8px;
+     /* text-align: center !important; */
+  }
+
+  .text_container p,
+  .texts {
+    font-size: 1rem;
+    
+  }
+
+  .image_container {
+    display: none;
+  }
+}
+
+/* ========================= */
+/* 📱 Tablet (769px – 1024px) */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 50px 8%;
+  }
+
+  .text_container h2 {
+    font-size: 2.4rem;
+  }
+
+  .text_container h3 {
+    font-size: 1.3rem;
+  }
+
+  .text_container p,
+  .texts {
+    font-size: 1.1rem;
+  }
+
+  .image_container img {
+    max-width: 90%;
+  }
+}
