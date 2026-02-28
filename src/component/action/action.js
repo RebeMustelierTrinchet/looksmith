@@ -37,8 +37,8 @@ export default function Action({
 
   const currentPhrase = phrases[index];
   const telHref = `tel:${phone.replace(/\s+/g, "")}`;
-  const waHref = `https://wa.me/${phone.replace(/\D/g, "")}?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services`;
-  const smsHref = `sms:${phone.replace(/\D/g, "")}?body=Hi%2C%20I%20am%20interested%20in%20your%20locksmith%20services`;
+  // const waHref = `https://wa.me/${phone.replace(/\D/g, "")}?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services`;
+  // const smsHref = `sms:${phone.replace(/\D/g, "")}?body=Hi%2C%20I%20am%20interested%20in%20your%20locksmith%20services`;
 
   return (
     <section className={styles.callSection} aria-label="Call to action">

@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FaCarSide, FaKey, FaHome, FaLock, FaFingerprint, FaBuilding, FaLaptopCode, FaSyncAlt } from "react-icons/fa";
 import { MdMiscellaneousServices } from "react-icons/md";
-import image from "./../../images/Xkey Logo PNG big.png"
+// import image from "./../../images/Xkey Logo PNG big.png"
 
 
 export default function ServicesCarousel() {

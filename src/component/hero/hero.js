@@ -25,8 +25,9 @@ export default function Hero() {
       <div className={styles.container}>
         {/* Texto */}
         <div className={styles.textBox}>
-          <h1 className={styles.title}>Coded. <a className={styles.title_2}> Secured.</a></h1>
-
+          <h1 className={styles.title}>
+            Coded. <span className={styles.title_2}>Secured.</span>
+          </h1>
           {/* Botones */}
           <div className={styles.actions}>
             <a
