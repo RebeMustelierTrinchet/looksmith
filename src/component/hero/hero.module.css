@@ -6,12 +6,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(to right, #f8f9fa, #e9ecef); */
-  background-color: var(--color-grey-blue);
-  
+  background: linear-gradient(
+    to right,
+    #2f5fb3 0%,                 /* azul izquierda */
+    var(--color-grey-blue) 50%, /* centro claro */
+    #2f5fb3 100%                /* azul derecha */
+  );
+  overflow: visible;
   padding: 2rem 1rem;
 }
-
 .container {
   max-width: 1200px;
   display: flex;
@@ -140,106 +143,68 @@
   max-height: 55vh;
   height: auto;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  /* background-color: #0077ff; */
-  border: 10px solid transparent;
-  outline: 3px solid var(--color-accent-blue);
+  margin-left: 50px;
+
+  transform: translateY(80px) scale(1.5);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
 
-  }
-
-  .title {
-    font-size: 2.2rem;
-  }
-
-  .subtitle {
-    font-size: 1.9rem;
+  .hero {
+    position: relative;
+ 
+    min-height: 50vh !important; /* sobreescribe el min-height */
+    max-height: 50vh !important;
+    padding: 0;
   }
 
-  .actions {
-    justify-content: center;
-  }
-  .hero{
-    min-height: 50vh;
-  }
   .textBox{
-    max-height: 38vh;
-  }
-}
-
-
-
-/* ====================== */
-/* 📱 Mobile (≤768px) */
-/* ====================== */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
+    background-color: #a7cffca2;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    background-color:#c4d0f783;
-    height: 50vh !important;
-    padding: 0 0 !important;
+    display: flex;
+        flex-direction: column;
+    flex: 0 0 auto;   /* 👈 no crecer, no encogerse raro */
+    width: auto;      /* 👈 solo el tamaño de su contenido */
+    max-width: 100%;  /* seguridad */
+    padding: 10px;
+    border-radius: 20px;
+  
 
   }
-  .hero{
-     
-      /* background-image: url('./../../images/img.png'); */
 
-      background-image: url('./../../images/key\ and\ car.webp');
-      background-size: cover;       /* que ocupe todo */
-      background-position: bottom; 
-      background-repeat: no-repeat;
-       height: 50vh !important;
-       width: 100% !important;
-       padding:0;
-    
-    }
-
-  .title {
-    font-size: 2rem;
-    margin-top: 40px !important;
-    color:var( --color-logo-blue)
-    /* background-color: aquamarine; */
-  }
-
-  .subtitle {
-    font-size: 1.8rem;
-    padding: 0 1rem;
-  }
-
-  .actions {
-    justify-content: center;
-    gap: 0.8rem;
-  }
-
-  .cta {
-    width: 100%;   /* 🔹 Botones ocupan todo el ancho en móvil */
-    max-width: 280px;
-  }
-
-
-}
-
-/* ====================== */
-/* 📱 Tablet (769px–1024px) */
-/* ====================== */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .title {
-    font-size: 2.4rem;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
+  .imageBox {
+    position: absolute;
+    inset: 0;
+    overflow: visible;
   }
 
   .image {
-    max-width: 90%;
+    height: 100%;
+    object-position: center top; /* enfoca la parte superior */
+
+  transform: translateY(50px) scale(3.0);
+    margin: 0;
+      z-index: -1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+max-height: 50vh !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+   
+  }
+
+  
+
+  .cta {
+    backdrop-filter: blur(4px);
   }
 }

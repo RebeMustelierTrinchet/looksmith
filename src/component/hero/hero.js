@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./hero.module.css";
-import heroImg from "./../../images/key and car.webp"; // ✅ Usa imagen optimizada WebP
+import heroImg from "./../../images/X Key Key (1).png"; // ✅ Usa imagen optimizada WebP
 import { BsTelephoneXFill } from "react-icons/bs";
 // import { FaWhatsapp } from "react-icons/fa6";
 // import { TbMessageCircle } from "react-icons/tb";
@@ -63,7 +63,7 @@ export default function Hero() {
 
         {/* Imagen */}
         <div className={styles.imageBox}>
-          {!isMobile && (
+          
           <img
             src={heroImg}
             alt="Locksmith working"
@@ -72,7 +72,6 @@ export default function Hero() {
             decoding="async"
             className={styles.image}
           />
-        )}
         </div>
       </div>
     </section>
