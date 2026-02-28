@@ -5,19 +5,19 @@ import { BsTelephoneXFill } from "react-icons/bs";
 // import { FaWhatsapp } from "react-icons/fa6";
 // import { TbMessageCircle } from "react-icons/tb";
 
-import { useEffect, useState } from "react";
+
 
 
  
 
 export default function Hero() {
 
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth <= 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
+  // useEffect(() => {
+  //   const check = () => setIsMobile(window.innerWidth <= 768);
+  //   check();
+  //   window.addEventListener("resize", check);
+  //   return () => window.removeEventListener("resize", check);
+  // }, []);
 
   return (
     <section className={styles.hero} aria-label="Locksmith services and key duplication">
