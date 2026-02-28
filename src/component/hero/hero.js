@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
  
 
 export default function Hero() {
-   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth <= 768);
