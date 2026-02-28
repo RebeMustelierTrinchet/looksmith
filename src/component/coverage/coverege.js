@@ -24,16 +24,16 @@ const Coverage = () => {
 
         {/* 🔹 Mapa con título accesible */}
         <div className={styles.map}>
-         <iframe
-          title="Google map showing XKEY service coverage in Houston 77089 area"
-          src="https://www.google.com/maps?q=77089,+Houston,+TX&output=embed"
-          width="100%"
-          height="400"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+        <iframe
+        title="Google map showing XKEY service coverage in Houston and surrounding areas"
+        src="https://www.google.com/maps?q=Houston,+TX&z=10&output=embed"
+        width="100%"
+        height="400"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
 
 
         </div>

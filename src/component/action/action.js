@@ -4,8 +4,8 @@ import img from "./../../images/key in car.jpg";
 
 // Icons
 import { BsTelephoneFill } from "react-icons/bs";
-import { FaWhatsapp } from "react-icons/fa6";
-import { TbMessageCircle } from "react-icons/tb";
+// import { FaWhatsapp } from "react-icons/fa6";
+// import { TbMessageCircle } from "react-icons/tb";
 
 /**
  * Action component
