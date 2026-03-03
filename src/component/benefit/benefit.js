@@ -69,6 +69,10 @@ export default function Features() {
               className={`${styles.featureCard} ${styles.hidden}`} // inicia oculto
               ref={(el) => (cardsRef.current[index] = el)}
             >
+               <div className={styles.backgroundIcon}>
+                {feature.icon}
+              </div>
+
               <div className={styles.icon}>{feature.icon}</div>
               <h3 className={styles.title}>{feature.title}</h3>
               <p className={styles.description}>{feature.description}</p>
@@ -77,12 +81,14 @@ export default function Features() {
 
         </div>
       
-           <img 
-        src={image}  
-        className={styles.image}  
-        loading="lazy"
-        alt="Car remote key with modern design" 
-      />
+         <div className={styles.imageContainer}>
+            <img 
+              src={image}  
+              className={styles.image}  
+              loading="lazy"
+              alt="Car remote key with modern design" 
+            />
+          </div>
       </section>
     </section>
   );

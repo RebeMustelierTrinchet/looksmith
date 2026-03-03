@@ -150,7 +150,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 13rem; /* tamaño grande */
+  font-size: 10rem; /* tamaño grande */
   color: var(--color-accent-blue);
   opacity: 0.2;   /* súper sutil */
   z-index: 0;
@@ -165,28 +165,6 @@
   z-index: 1;
 }
 
-/* ===== TABLET / IPAD ===== */
-@media (min-width: 769px) and (max-width: 1374px) {
-
-  .featuresGrid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 900px;
-    gap: 2rem;
-  }
-
-  .sectionTitle {
-    font-size: 2.5rem;
-  }
-
-  .backgroundIcon {
-    font-size: 10rem;
-    opacity: 0.12;
-  }
-
-  .imageContainer {
-    max-width: 400px;
-  }
-}
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
 

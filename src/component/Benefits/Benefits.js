@@ -1,7 +1,8 @@
 
 import React, { useEffect, useRef } from "react";
-import styles from "./../benefit/benefit.module.css";
+import styles from "./benefit.module.css";
 import { FaUserShield, FaCheckCircle, FaTools } from "react-icons/fa";
+import { BsKeyFill } from "react-icons/bs";
 
 export default function Benefits() {
 const cardsRef = useRef([]);
@@ -57,6 +58,9 @@ const cardsRef = useRef([]);
               className={`${styles.featureCard} ${styles.hidden}`} // inicia oculto
               ref={(el) => (cardsRef.current[index] = el)}
             >
+               <div className={styles.backgroundIcon}>
+                {benefit.icon}
+              </div>
               <div className={styles.icon}>{benefit.icon}</div>
               <h3 className={styles.title}>{benefit.title}</h3>
               <p className={styles.description}>{benefit.description}</p>

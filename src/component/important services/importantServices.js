@@ -63,7 +63,7 @@ export default function ImportantServices({ onRequest }) {
         ))}
       </div>
 
-        <div className={styles.ctaButtons}>
+        {/* <div className={styles.ctaButtons}>
           <a
             href="https://wa.me/1234567890?text=Hi%20I%20would%20like%20advice%20on%20a%20dealer%20service"
             target="_blank"
@@ -72,7 +72,7 @@ export default function ImportantServices({ onRequest }) {
           >
             Contact via WhatsApp
           </a>
-        </div>
+        </div> */}
     </section>
   );
 }
