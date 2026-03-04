@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./benefit.module.css";
 import { FaUserShield, FaCheckCircle, FaTools } from "react-icons/fa";
-import { BsKeyFill } from "react-icons/bs";
+// import { BsKeyFill } from "react-icons/bs";
 
 export default function Benefits() {
 const cardsRef = useRef([]);

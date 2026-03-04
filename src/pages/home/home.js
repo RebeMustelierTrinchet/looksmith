@@ -12,7 +12,7 @@ import QuickTipsCarousel from "../../component/tips/tips";
 import CallButton from "../../component/call/call";
 import Politics from "../../component/politics/politics";
 import ImportantServices from "../../component/important services/importantServices";
-import Key_Carrusel from "../../component/keys carrusel/key_carrusel";
+import KeyCarrusel from "../../component/keys carrusel/keycarrusel";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <Services/>
         <Features/>
         <Benefits/>
-        <Key_Carrusel/>
+        <KeyCarrusel/>
         <Text/>
         
         <Testimonials/>

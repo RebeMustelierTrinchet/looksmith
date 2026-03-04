@@ -41,7 +41,7 @@ export default function ContactHero() {
     }, 50);
 
     return () => clearInterval(typing);
-  }, [current]);
+  }, [current, messages]);
 
   return (
     <section className={styles.hero}>
