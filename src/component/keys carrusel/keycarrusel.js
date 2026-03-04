@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./key_carrusel.module.css";
+import styles from "./keycarrusel.module.css";
 
 export default function KeyCarrusel() {
   const [logos, setLogos] = useState([]);

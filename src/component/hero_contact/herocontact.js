@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import styles from "./hero_contact.module.css";
+import styles from "./herocontact.module.css";
 
 import img1 from "../../images/photo_2026-03-02_18-34-34.jpg";
 import img2 from "../../images/photo_2026-03-02_18-34-35.jpg";
