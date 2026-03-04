@@ -7,33 +7,34 @@ import img3 from "../../images/photo_2026-03-02_18-34-42.jpg";
 import img4 from "../../images/photo_2026-03-02_18-34-44.jpg";
 import img5 from "../../images/photo_2026-03-02_18-34-48.jpg";
 
+const images = [img1, img2, img3, img4, img5];
+
+const messages = [
+  "Fast response when you need it most.",
+  "Professional automotive locksmith specialists.",
+  "Licensed and insured for your peace of mind.",
+  "Advanced key programming technology.",
+  "Customer satisfaction is our priority."
+];
+
 export default function ContactHero() {
-  const images = [img1, img2, img3, img4, img5];
-
-  const messages = [
-    "Fast response when you need it most.",
-    "Professional automotive locksmith specialists.",
-    "Licensed and insured for your peace of mind.",
-    "Advanced key programming technology.",
-    "Customer satisfaction is our priority."
-  ];
-
   const [current, setCurrent] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
 
-  // Cambio automático de slide
+  // Slide automático
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
     }, 6000);
 
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []); // ✅ now safe
 
-  // Efecto de escritura
+  // Typing effect
   useEffect(() => {
     let i = 0;
     setDisplayedText("");
+
     const typing = setInterval(() => {
       setDisplayedText(messages[current].slice(0, i + 1));
       i++;
@@ -41,7 +42,7 @@ export default function ContactHero() {
     }, 50);
 
     return () => clearInterval(typing);
-  }, [current, messages]);
+  }, [current]); // ✅ clean dependency
 
   return (
     <section className={styles.hero}>
