@@ -12,7 +12,8 @@ import QuickTipsCarousel from "../../component/tips/tips";
 import CallButton from "../../component/call/call";
 import Politics from "../../component/politics/politics";
 import ImportantServices from "../../component/important services/importantServices";
-import KeyCarrusel from "../../component/keys carrusel/keycarrusel";
+import KeyCarrusel from "../../component/keys carrusel/key_carrusel";
+
 
 export default function Home() {
   return (
