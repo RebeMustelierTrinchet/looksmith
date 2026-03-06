@@ -18,6 +18,9 @@ export default function Hero() {
   //   window.addEventListener("resize", check);
   //   return () => window.removeEventListener("resize", check);
   // }, []);
+   const phone = "9367773999";
+  const telHref = `tel:${phone.replace(/\s+/g, "")}`;
+ 
 
   return (
     <section className={styles.hero} aria-label="Locksmith services and key duplication">
@@ -29,14 +32,15 @@ export default function Hero() {
           </h1>
           {/* Botones */}
           <div className={styles.actions}>
-            <a
-              href="tel:9367773999"
-              className={styles.cta}
-              aria-label="Call XKEY"
-            >
-              <BsTelephoneXFill className={styles.icon} />
-              Call Us
-            </a>
+            
+              <a
+            className={styles.cta}
+            href={telHref}
+            aria-label={`Call now ${phone}`}
+          >
+            <BsTelephoneXFill className={styles.icon} />
+            Call Us
+          </a>
 
             {/* <a
               href="https://wa.me/9367773999?text=Hello%20I%20would%20like%20to%20know%20more%20about%20your%20services"
