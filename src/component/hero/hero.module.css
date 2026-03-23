@@ -181,12 +181,11 @@
   }
 
   .image {
-    height: 100%;
+    height: 60vh;
     object-position: center top; /* enfoca la parte superior */
-
-  transform: translateY(50px) scale(3.0);
     margin: 0;
-      z-index: -1;
+    z-index: -1;
+    transform: translateY(-14vh);
   }
 
   .container {

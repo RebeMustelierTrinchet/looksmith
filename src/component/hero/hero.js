@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./hero.module.css";
-import heroImg from "./../../images/X Key Key (1).png"; // ✅ Usa imagen optimizada WebP
+import heroImg from "./../../images/X Key Key (2).png"; // ✅ Usa imagen optimizada WebP
 import { BsTelephoneXFill } from "react-icons/bs";
 // import { FaWhatsapp } from "react-icons/fa6";
 // import { TbMessageCircle } from "react-icons/tb";
